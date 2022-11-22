@@ -1,0 +1,6 @@
+token:
+currency_api_url: "https://api.exchangerate.host/latest"
+exchange_service_fetch_interval: 10
+request_timeout: 3
+base_currency: "RUB"
+currencies: ["RUB", "USD", "EUR", "CNY"]

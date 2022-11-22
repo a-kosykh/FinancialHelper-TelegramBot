@@ -1,0 +1,9 @@
+/bin
+/.vscode
+/.idea
+*.log
+*.tmpl
+*.db
+/data
+!/data/zap_config.json
+!/data/zap_report_generator_config.json

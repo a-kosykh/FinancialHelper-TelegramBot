@@ -1,0 +1,2 @@
+go run cmd/goose/main.go -dir migrations postgres "user=postgres password=admin dbname=telegram-bot-db sslmode=disable" up
+go run cmd/goose/main.go postgres "user=postgres password=admin dbname=telegram-bot-db sslmode=disable" status

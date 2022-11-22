@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+
+option go_package = "gitlab.ozon.dev/akosykh114/telegram-bot/api";
+import "google/protobuf/wrappers.proto";
+
+package proto_report;
+
+message Report {
+  google.protobuf.Int64Value user_id = 1;
+  repeated Expence expences = 2;
+}
+
+message Expence {
+  google.protobuf.Int64Value id = 1;
+  google.protobuf.Int64Value category_id = 2;
+  google.protobuf.StringValue category_name = 3;
+  google.protobuf.Int64Value ts = 4;
+  google.protobuf.Int64Value total = 5;
+}
+
+message ReportResponse {
+  google.protobuf.Int64Value responseCode = 1;
+}
+
+service ReportSender {
+  rpc SendReport(Report) returns (ReportResponse) {}
+}

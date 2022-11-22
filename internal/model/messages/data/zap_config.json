@@ -1,0 +1,13 @@
+{
+    "level": "debug",
+    "encoding": "json",
+    "outputPaths": ["stdout", "tg-bot.log"],
+    "errorOutputPaths": ["stderr", "tg-bot.log"],
+    "encoderConfig": {
+        "messageKey": "message",
+        "levelKey": "level",
+        "levelEncoder": "lowercase",
+        "timeKey": "ts",
+        "timeEncoder": "RFC3339"
+    }
+}
